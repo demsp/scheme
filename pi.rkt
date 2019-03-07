@@ -1,0 +1,17 @@
+; sicp. page 78
+
+(define (sum term a next b)
+(if (> a b)
+0
+(+ (term a)
+(sum term (next a) next b))))
+
+(define (pi-sum a b)
+(define (pi-term x)
+(/ 1.0 (* x (+ x 2))))
+(define (pi-next x)
+(+ x 4))
+(sum pi-term a pi-next b))
+
+(* 8 (pi-sum 1 1000))
+;3.139592655589783
