@@ -1,3 +1,4 @@
+-- https://www.tutorialspoint.com/haskell/haskell_functions.htm
 --можно заменить Integer на Int
 x :: Integer
 y :: Integer
